@@ -20,33 +20,7 @@ npm install
 ```
 
 ## Usage
-The scripts are supposed to be run with `npx ts-node`. 
-
-Deploying the Ballot contract:
-```bash
-npx ts-node --files ./scripts/DeployWithViem.ts "proposal1" "proposal2" "proposal3" "proposalN"
-```
-
-Voting for proposal `0` where `0` is the proposal number of the proposal you want to vote:
-```bash
-npx ts-node --files ./scripts/CastVote.ts "CONTRACT_ADDRESS" 0
-```
-
-
-Giving rights to vote for some other contract (needs to be the chairperson):
-```bash
-npx ts-node --files ./scripts/GiveVoteRights.ts "CONTRACT_ADDRESS" "VOTER_ADDRESS"
-```
-
-Delegating your vote  for some other contract:
-```bash
-npx ts-node --files ./scripts/DelegateVote.ts "CONTRACT_ADDRESS" "DEGELATE_ADDRESS"
-```
-
-Querying the winner proposal:
-```bash
-npx ts-node --files ./scripts/getWinnerProposal.ts "CONTRACT_ADDRESS"
-```
+Run the backend with `npm start`, open it on the port 3000 on your localhost: `http://localhost:3000` and interact with the smart contracts. 
 
 ## Contributors
 This project was made by the Team 1 of the Encode Club Solidity Bootcamp: 
